@@ -1,7 +1,12 @@
-spring.application.name=demo
+spring:
+  application:
+    name: demo
+
+server:
+  port: 8080
 
 cas:
-login:
-url: ${cas.base.url}/login
-base:
-url: ${CAS_BASE_URL:http://localhost:8090/cas}
+  login:
+    url: ${cas.base.url}/login
+  base:
+    url: ${CAS_BASE_URL:http://10.1.5.102:18080/cas}

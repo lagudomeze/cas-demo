@@ -1,6 +1,5 @@
-package ai.zhidun.app.hub.auth.service;
+package com.example.demo;
 
-import lombok.experimental.UtilityClass;
 import org.springframework.security.cas.authentication.CasAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContext;
@@ -8,7 +7,6 @@ import org.springframework.security.core.context.SecurityContextHolder;
 
 import java.util.Optional;
 
-@UtilityClass
 public class AuthSupport {
 
     public static Optional<YsUserDetail> userDetail() {

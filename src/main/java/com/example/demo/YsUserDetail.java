@@ -1,4 +1,4 @@
-package ai.zhidun.app.hub.auth.service;
+package com.example.demo;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
