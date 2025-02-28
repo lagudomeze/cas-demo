@@ -1,0 +1,7 @@
+spring.application.name=demo
+
+cas:
+login:
+url: ${cas.base.url}/login
+base:
+url: ${CAS_BASE_URL:http://localhost:8090/cas}
