@@ -14,4 +14,9 @@ public class AuthController {
     public String register() {
         return userDetail().toString();
     }
+
+    @GetMapping("/test")
+    public String test() {
+        return "haha";
+    }
 }
