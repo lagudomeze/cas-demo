@@ -1,7 +1,7 @@
 package com.example.demo;
 
 import org.apereo.cas.client.session.SingleSignOutFilter;
-import org.apereo.cas.client.validation.Cas30ServiceTicketValidator;
+import org.apereo.cas.client.validation.Cas20ServiceTicketValidator;
 import org.apereo.cas.client.validation.TicketValidator;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -78,7 +78,7 @@ public class WebSecurityConfig {
     private String casLoginUrl;
 
     private TicketValidator cas30ServiceTicketValidator() {
-        return new Cas30ServiceTicketValidator(this.casBaseUrl);
+        return new Cas20ServiceTicketValidator(this.casBaseUrl);
     }
 
     @Value("${server.port}")

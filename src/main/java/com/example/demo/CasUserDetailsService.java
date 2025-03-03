@@ -13,6 +13,10 @@ public class CasUserDetailsService implements AuthenticationUserDetailsService<C
     public UserDetails loadUserDetails(CasAssertionAuthenticationToken token) throws UsernameNotFoundException {
         String name = token.getName();
 
+        System.out.println(token);
+
+        System.out.println(token.getAssertion().getPrincipal().getAttributes());
+
         // todo get user info from database
         // 0: 普通用户, 1: 部门管理员 2: 系统管理员 -1: 特殊用户
 
